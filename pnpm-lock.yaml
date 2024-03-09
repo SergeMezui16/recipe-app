@@ -29,6 +29,9 @@ dependencies:
   '@vinejs/vine':
     specifier: ^1.7.1
     version: 1.7.1
+  edge-iconify:
+    specifier: ^2.0.1
+    version: 2.0.1(edge.js@6.0.1)
   edge.js:
     specifier: ^6.0.1
     version: 6.0.1
@@ -98,7 +101,7 @@ devDependencies:
     specifier: ^5.3.3
     version: 5.4.2
   vite:
-    specifier: ^5.0.12
+    specifier: ^5.1.5
     version: 5.1.5(@types/node@20.11.25)
 
 packages:
@@ -880,6 +883,17 @@ packages:
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
+
+  /@iconify/iconify@3.1.1:
+    resolution: {integrity: sha512-1nemfyD/OJzh9ALepH7YfuuP8BdEB24Skhd8DXWh0hzcOxImbb1ZizSZkpCzAwSZSGcJFmscIBaBQu+yLyWaxQ==}
+    deprecated: no longer maintained, switch to modern iconify-icon web component
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify/types@2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2311,6 +2325,16 @@ packages:
   /edge-error@4.0.1:
     resolution: {integrity: sha512-z5mNO97k8hRVpJ6Ew1qbkMTfQ44CwuWnl+ShMCrEFgD+b324CnjBS6HbiR+Wh6Wcmw9C+/XsFBHzZ+376PpD/w==}
     engines: {node: '>=18.16.0'}
+
+  /edge-iconify@2.0.1(edge.js@6.0.1):
+    resolution: {integrity: sha512-VRWeiz4qnm/dlcGQuMd/olTTfCHHCRleW6kcy0EdXZE8hreXDx01I55f/yzYezePGsWwBuKirFVzwnrz4qMo0g==}
+    engines: {node: '>=18.16.0'}
+    peerDependencies:
+      edge.js: ^6.0.0
+    dependencies:
+      '@iconify/iconify': 3.1.1
+      edge.js: 6.0.1
+    dev: false
 
   /edge-lexer@6.0.1:
     resolution: {integrity: sha512-iYPlo+EyERGL4cICzqXIYVxMB6sSOXazpAqkqN4YcLtwR7K1i1KcwNkSy36T40BYvP7UjjjjAVnz+fk3NEWH9Q==}
