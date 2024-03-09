@@ -3,10 +3,6 @@ import { BaseModel, beforeSave, column } from '@adonisjs/lucid/orm'
 import stringHelpers from '@adonisjs/core/helpers/string'
 
 export default class Recipe extends BaseModel {
-  tableName(model: typeof BaseModel) {
-    return 'recipe'
-  }
-
   @column({ isPrimary: true })
   declare id: number
 
