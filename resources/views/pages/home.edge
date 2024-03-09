@@ -2,5 +2,16 @@
 
 @include('partials/head')
 
-<p>lorem</p>
+<h1>Les Recettes</h1>
+
+<div class="">
+
+  <ul>
+    @each(recipe in recipes)
+    <li>{{recipe.name}}</li>
+
+    @end
+  </ul>
+</div>
+
 @include('partials/footer')

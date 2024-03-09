@@ -7,6 +7,7 @@
 |
 */
 
+const RecipesController = () => import('#controllers/recipes_controller')
 import router from '@adonisjs/core/services/router'
 
-router.on('/').render('pages/home', { serge: 2 })
+router.get('/', [RecipesController, 'index'])
